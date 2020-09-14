@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 function call_api(finishedAPI) {
   request(
-    "https://api.punkapi.com/v2/beers",
+    "https://api.punkapi.com/v2/beers/random",
     { json: true },
     (err, res, body) => {
       if (err) {

@@ -3,14 +3,15 @@
         <h1 class="display-4">
             B33RZ
         </h1>
-        <p class="lead">Discover the latest beers and their stats.</p>
+        <p class="lead">Enjoy a random Beer, on the house.</p>
     </div>
 </div>
 <div class="row">
     {{#each b33rz}}
     <div class="col">
-        <div class="card">
-            <img src="{{ this.image_url }}" class="card-img-top" alt="{{ this.source }}">
+        <div class="card m-auto" style="width:30rem;">
+            <img src="{{ this.image_url }}" style="height:400px;width:200px;" class="card-img m-auto"
+                alt="{{ this.source }}">
             <div class="card-body">
                 <h5 class="card-title">{{this.name}}</h5>
                 <p class="card-text">{{this.description}}</p>
