@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="jumbotron jumbotron-fluid text-center ">
+        <h1 class="display-4">
+            B33RZ
+        </h1>
+        <p class="lead">Discover the latest beers and their stats.</p>
+    </div>
+</div>
+<div class="row">
+    {{#each b33rz}}
+    <div class="col">
+        <div class="card">
+            <img src="{{ this.image_url }}" class="card-img-top" alt="{{ this.source }}">
+            <div class="card-body">
+                <h5 class="card-title">{{this.name}}</h5>
+                <p class="card-text">{{this.description}}</p>
+                <p class="card-text"><strong>ABV: </strong>{{this.abv}}</p>
+                {{!-- <p class="card-text">{{this.ingredients.method.malt}}</p>
+                    <p class="card-text">{{this.ingredients.hops}}</p> --}}
+                <p class="card-text"><strong>Ingredients: </strong>{{this.ingredients.yeast}}</p>
+                {{!-- <p class="card-text">{{this.ingredients.yeast.hops}}</p>
+                    <p class="card-text">{{this.ingredients.yeast.malt}}</p> --}}
+                <p class="card-text"><strong>Food Pairing: </strong></string>{{this.food_pairing}}</p>
+                <p class="card-text"><strong>Brewer's Tips: </strong>{{this.brewers_tips}}</p>
+
+            </div>
+        </div>
+        <br />
+    </div>
+    {{/each}}
+</div>
+</div>
+
+
+
+
+
+
+{{!-- {{#each news.Data}}
+<div>{{this}}</div>
+{{/each}} --}}
